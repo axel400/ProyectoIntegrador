@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcuaHigienicos - Juego</title>
+    <link rel="icon" type="icon" href="imagenes/logotipo.jpeg" />
+    <link href="estiloJuego.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+    <script src="juego.js"></script>
+    <div id="cuadroDialogo">
+        <br>
+        <center>
+        <a id="enlaceinicio" class="nav-link" href="index1.html">Regresar</a>
+        <br><br>
+        <div class="linea"></div>  
+        <br>  
+        <input type="button" value="Iniciar" onclick="iniciarJuego()" /> 
+        <span id="tiempo">Tiempo: 30</span>  
+        </center>
+        <br>
+        <div class="linea"></div>
+        <center><h3>Encuentra los pares</h3>
+        <p>Debes encontrar el par de cartas iguales y resolver el juego en menos de 30 segundos </p></center>
+        <br>
+    </div>
+    <div id="juego">
+        <table>
+      <tr>
+        <td id="0" class="letra" onclick="girarCarta()" data-valor="valor"></td>
+        <td id="1" class="letra" onclick="girarCarta()" data-valor="valor"></td>
+        <td id="2" class="letra" onclick="girarCarta()" data-valor="valor"></td>
+        <td id="3" class="letra" onclick="girarCarta()" data-valor="valor"></td>
+      </tr>
+      <tr>
+        <td id="4" class="letra" onclick="girarCarta()" data-valor="valor"></td>
+        <td id="5" class="letra" onclick="girarCarta()" data-valor="valor"></td>
+        <td id="6" class="letra" onclick="girarCarta()" data-valor="valor"></td>
+        <td id="7" class="letra" onclick="girarCarta()" data-valor="valor"></td>
+      </tr>
+      <tr>
+        <td id="8" class="letra" onclick="girarCarta()" data-valor="valor"></td>
+        <td id="9" class="letra" onclick="girarCarta()" data-valor="valor"></td>
+        <td id="10" class="letra" onclick="girarCarta()" data-valor="valor"></td>
+        <td id="11" class="letra" onclick="girarCarta()" data-valor="valor"></td>
+      </tr>
+      <tr>
+        <td id="12" class="letra" onclick="girarCarta()" data-valor="valor"></td>
+        <td id="13" class="letra" onclick="girarCarta()" data-valor="valor"></td>
+        <td id="14" class="letra" onclick="girarCarta()" data-valor="valor"></td>
+        <td id="15" class="letra" onclick="girarCarta()" data-valor="valor"></td>
+      </tr>
+          </table>
+    </div>
+</body>
+</html>
